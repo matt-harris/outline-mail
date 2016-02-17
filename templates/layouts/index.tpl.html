@@ -20,6 +20,16 @@
     /* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
     div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
 
+    /* Remove ios blue links */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
     /* Outline styles */
     @media only screen and (max-width: 599px) {
       .content-table {
@@ -41,6 +51,12 @@
         padding: 8px !important;
         border: 0 !important;
       }
+
+      .mobile-align-center {
+        text-align: center !important;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   </style>
 </head>
@@ -54,51 +70,9 @@
 
 <!-- Don't forget to include a header -->
 
-<!--@@include('header/_header-centre.html')
-@@include('header/_header-full-centre.html')
-@@include('header/_header-full.html')-->
-<!--@@include('header/_header-text-centre.html')-->
-<!--@@include('header/_header-text.html')
-@@include('header/_header.html')-->
-
-
 <!-- Include all your body email components here -->
 
-<!-- @@include('article/_article.html')
-@@include('article/_articles-title.html') -->
-
-
-<!-- @@include('four-up/_four-up-button-centre.html')
-@@include('four-up/_four-up-button.html')
-@@include('four-up/_four-up-centre.html')
-@@include('four-up/_four-up.html') -->
-
-@@include('hero/_hero-img-title-text-cta-centre.html')
-<!--@@include('hero/_hero-img-title-text-cta.html')
-@@include('hero/_hero-title-text-cta-centre.html')
-@@include('hero/_hero-title-text-cta.html')-->
-
-<!-- @@include('three-up/_three-up-button-centre.html')
-@@include('three-up/_three-up-button.html')
-@@include('three-up/_three-up-centre.html')
-@@include('three-up/_three-up-feature.html')
-@@include('three-up/_three-up-text.html')
-@@include('three-up/_three-up-title-text.html')
-@@include('three-up/_three-up.html') -->
-
-<!--@@include('two-up/_two-up-button-centre.html')
-@@include('two-up/_two-up-button.html')
-@@include('two-up/_two-up-centre.html')
-@@include('two-up/_two-up-text.html')
-@@include('two-up/_two-up-title-text.html')
-@@include('two-up/_two-up.html') -->
-
 <!-- Don't forget to include a footer -->
-
-<!--@@include('footer/_footer-centre.html')
-@@include('footer/_footer-full-centre.html')
-@@include('footer/_footer-full.html')
-@@include('footer/_footer.html')-->
 
 </body>
 </html>
