@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Outline Mail - making html email easy. Example 1.</title>
+  <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a { padding: 0; }
+    .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass * { line-height: 100%; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode:bicubic; }
+    /* RESET STYLES */
+    body { height:100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    /* Remove margin on email wrapper in Android 4.4 KitKat */
+    /* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+    div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+
+    /* Remove ios blue links */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* Outline styles */
+    @media only screen and (max-width: 599px) {
+      .content-table {
+        width: 100% !important;
+      }
+
+      img[class="img-max"]{
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      table[class="mobile-button-wrap"]{
+        margin: 0 auto;
+        width: 100% !important;
+      }
+
+      a[class="mobile-button"]{
+        width: 80% !important;
+        padding: 8px !important;
+        border: 0 !important;
+      }
+
+      .mobile-align-center {
+        text-align: center !important;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important;">
+
+<!-- hidden preheader text - Remember to change it! -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
+  Outline Mail - making html email easy. Example 1.
+</div>
+
+<!-- Don't forget to include a header -->
+@@include('header/_header-full-centre.html')
+
+<!-- Include all your body email components here -->
+@@include('hero/_hero-img-title-text-cta-centre.html')
+
+@@include('article/_articles-title.html')
+
+<!-- Don't forget to include a footer -->
+@@include('footer/_footer-full-centre.html')
+
+</body>
+</html>
