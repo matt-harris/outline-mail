@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "description": "Outline Mail - Making HTML email easy - by Matt Harris",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.4.0",
+    "gulp-extname": "^0.2.0",
+    "gulp-file-include": "^0.13.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-mailgun": "0.0.7",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
