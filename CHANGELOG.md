@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/matt-harris/outline/tree/HEAD)
+## [Unreleased](https://github.com/matt-harris/outline-mail/tree/HEAD)
 
 ### Changed
 
@@ -12,4 +12,4 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Intial release
 
-[Full Changelog](https://github.com/matt-harris/outline/compare/v1.0.1...HEAD)
+[Full Changelog](https://github.com/matt-harris/outline-mail/compare/v0.1...HEAD)
