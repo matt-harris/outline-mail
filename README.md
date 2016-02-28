@@ -3,7 +3,7 @@ Outline Mail is a HTML email boilerplate, created by [Matt Harris](https://twitt
 
 ## Documentation
 
-Full documentation will follow
+View full documentation at: http://outlinemail.co.uk/get-started.html
 
 ## Updates
 
