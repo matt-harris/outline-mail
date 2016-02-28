@@ -6,7 +6,7 @@
   "authors": [
     "Matt Harris <hello@matt-harris.net> (http://www.matt-harris.net/)"
   ],
-  "main": "layouts/index.tpl.html",
+  "main": "templates/layouts/index.tpl.html",
   "keywords": [
     "outline mail",
     "outline",
