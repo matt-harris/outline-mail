@@ -13,8 +13,7 @@ var sendmail = require('gulp-mailgun');
 del = require('del');
 
 // Default Task
-gulp.task('default', ['clean', 'fileinclude', 'images', 'browser-sync', 'watch']);
-//gulp.task('default', ['fileinclude', 'images', 'browser-sync', 'sendmail', 'watch']);
+gulp.task('default', ['clean', 'fileinclude', 'images', 'browser-sync', 'sendmail', 'watch']);
 
 // Tasks
 // Include partial files into email template
