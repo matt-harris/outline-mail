@@ -1,0 +1,31 @@
+{
+  "name": "outline mail",
+  "version": "0.1",
+  "homepage": "http://outlinemail.co.uk/",
+  "description": "Outline Mail is HTML email framework with a bunch of fully tested responsive components to provide you a solid foundation for your HTML email project. It allows you to mix and match content blocks to easily build an HTML email using todays best practices in minutes.",
+  "authors": [
+    "Matt Harris <hello@matt-harris.net> (http://www.matt-harris.net/)"
+  ],
+  "main": "layouts/index.tpl.html",
+  "keywords": [
+    "outline mail",
+    "outline",
+    "email",
+    "framework",
+    "responsive",
+    "html",
+    "mobile-first",
+    "front-end",
+    "boilerplate",
+    "modular",
+    "simple"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
