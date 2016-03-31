@@ -11,6 +11,7 @@
     "gulp-extname": "^0.2.0",
     "gulp-file-include": "^0.13.5",
     "gulp-imagemin": "^2.3.0",
+    "gulp-litmus": "0.0.7",
     "gulp-mailgun": "0.0.7",
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2"

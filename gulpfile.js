@@ -10,7 +10,25 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var notify = require('gulp-notify');
 var sendmail = require('gulp-mailgun');
+var litmus = require('gulp-litmus');
 del = require('del');
+
+var litmusConfig = {
+    username: 'litmus_username',
+    password: 'litmus_password',
+    url: 'https://yourcompany.litmus.com',
+    applications: [
+        'android4', // Android 4.4
+        'androidgmailapp', // Gmail App (Android)
+        'appmail9', // Apple Mail 9
+        'chromegmailnew', // Gmail (Chrome)
+        'outlookcom', // Outlook.com (Explorer)
+        'chromeoutlookcom',  // Outlook.com (Chrome)
+        'ffgmailnew', // Gmail (Firefox)
+        'gmailnew', // Gmail (Explorer)
+        'iphone6' // iPhone 6
+    ]
+};
 
 // Default Task
 gulp.task('default', ['clean', 'fileinclude', 'images', 'browser-sync', 'sendmail', 'watch']);
@@ -91,6 +109,13 @@ gulp.task('sendmail', function () {
   .pipe(notify({
     message: 'Send email is task complete'
   }))
+});
+
+// Send specified email to Litmus to test various email clients
+gulp.task('litmus-test', function () {
+  return gulp.src('dist/*.html') // Modify this to select the HTML file(s)
+    .pipe(litmus(litmusConfig))
+    .pipe(gulp.dest('dist'));
 });
 
 // Clean 'dist'
