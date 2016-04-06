@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+## [v0.2](https://github.com/matt-harris/outline/tree/v0.2) (2015-04-06)
+
+### Added
+- New Gulp task - Send emails to Litmus
+- New eCommerce components
+- New eCommerce demo email layout
+
+### Changed
+- Updated README
+- Updated bower.json
+
 ## [v0.1](https://github.com/matt-harris/outline/tree/v0.1) (2015-02-28)
 
 ### Added
