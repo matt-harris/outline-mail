@@ -11,7 +11,8 @@ var reload = browserSync.reload;
 var notify = require('gulp-notify');
 var sendmail = require('gulp-mailgun');
 var litmus = require('gulp-litmus');
-del = require('del');
+var runSequence = require('run-sequence');
+var del = require('del');
 
 var litmusConfig = {
     username: 'litmus_username',
@@ -31,9 +32,17 @@ var litmusConfig = {
 };
 
 // Default Task
-gulp.task('default', ['clean', 'fileinclude', 'images', 'browser-sync', 'sendmail', 'watch']);
+gulp.task('default', function(cb) {
+  runSequence('clean', ['fileinclude', 'images', 'browser-sync', 'sendmail', 'litmus-test', 'watch'], cb);
+});
 
 // Tasks
+
+// Clean 'dist'
+gulp.task('clean', function() {
+  return del(['dist/*.html', 'dist/img']);
+});
+
 // Include partial files into email template
 gulp.task('fileinclude', function() {
   // grab 'template'
@@ -112,15 +121,11 @@ gulp.task('sendmail', function () {
 });
 
 // Send specified email to Litmus to test various email clients
+// Add this to 'default' task if you have a litmus account
 gulp.task('litmus-test', function () {
   return gulp.src('dist/*.html') // Modify this to select the HTML file(s)
     .pipe(litmus(litmusConfig))
     .pipe(gulp.dest('dist'));
-});
-
-// Clean 'dist'
-gulp.task('clean', function() {
-  return del(['dist/*.html', 'dist/img']);
 });
 
 // Watch files for changes
