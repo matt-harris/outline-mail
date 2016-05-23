@@ -7,6 +7,11 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+## [v0.3](https://github.com/matt-harris/outline/tree/v0.3) (2016-05-23)
+
+### Changed
+- Amended Gulp file - rewrote 'clean' task and set defualt task sequence order
+
 ## [v0.2](https://github.com/matt-harris/outline/tree/v0.2) (2015-04-06)
 
 ### Added
