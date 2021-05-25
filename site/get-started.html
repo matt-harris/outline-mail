@@ -1,0 +1,1844 @@
+<!--
+  _    _ _                           _
+ | |  | (_)                         | |
+ | |__| |_ _ __ ___   _ __ ___   ___| |
+ |  __  | | '__/ _ \ | '_ ` _ \ / _ \ |
+ | |  | | | | |  __/ | | | | | |  __/_|
+ |_|  |_|_|_|  \___| |_| |_| |_|\___(_)
+
+Need a Front End Developer? Take my card.
+http://matt-harris.net/take-my-card.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Outline Mail - Making HTML email easy.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="favicon-152.png" />
+    <meta name="msapplication-TileColor" content="#38a1d6" />
+    <meta name="msapplication-TileImage" content="favicon-152.png" />
+    <!-- google fonts -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lato:400,700,900|Merriweather:400,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- site style -->
+    <link href="css/outline.min.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="js/min/modernizr.custom.js"></script>
+  </head>
+  <body>
+    <div class="clearfix" role="main">
+      <div class="sidebar hide-for-medium-down">
+        <a class="logo" href="/">
+          <img src="img/min/logo-white.png" width="200" alt="Outline CSS framework" />
+        </a>
+
+        <nav>
+          <ul class="sidebar__nav list--unstyled">
+            <li>
+              <a href="#get-started" data-scroll>Get started</a>
+              <ul>
+                <li>
+                  <a href="#overview" data-scroll>Overview</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#layouts" data-scroll>Layouts</a>
+            </li>
+            <li>
+              <a href="#components" data-scroll>Components</a>
+              <ul>
+                <li>
+                  <a href="#header" data-scroll>Header</a>
+                </li>
+                <li>
+                  <a href="#hero" data-scroll>Hero</a>
+                </li>
+                <li>
+                  <a href="#list" data-scroll>List</a>
+                </li>
+                <li>
+                  <a href="#misc" data-scroll>Misc</a>
+                </li>
+                <li>
+                  <a href="#one-up" data-scroll>One up</a>
+                </li>
+                <li>
+                  <a href="#two-up" data-scroll>Two up</a>
+                </li>
+                <li>
+                  <a href="#three-up" data-scroll>Three up</a>
+                </li>
+                <li>
+                  <a href="#four-up" data-scroll>Four up</a>
+                </li>
+                <li>
+                  <a href="#gallery" data-scroll>Gallery</a>
+                </li>
+                <li>
+                  <a href="#article" data-scroll>Article</a>
+                </li>
+                <li>
+                  <a href="#ecommerce" data-scroll>eCommerce</a>
+                </li>
+                <li>
+                  <a href="#footer" data-scroll>Footer</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="docs">
+        <div class="nav-bar clearfix">
+          <a class="logo hide-for-medium-up float-left" href="/">
+            <img src="img/min/logo.png" alt="Outline CSS framework" />
+          </a>
+
+          <i class="nav-icon" id="trigger-overlay"></i>
+
+          <div class="nav-overlay">
+            <i class="nav-close"></i>
+            <nav class="nav">
+              <ul>
+                <li class="nav__item">
+                  <a href="/">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="get-started.html">Get started</a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://github.com/matt-harris/outline-mail">View on GitHub</a>
+                </li>
+                <li class="nav__item">
+                  <a href="http://outline-css.surge.sh/" target="_blank">Outline CSS framework</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="docs__content clearfix">
+          <section class="docs__item" id="get-started">
+            <h1 class="docs__heading">Get started</h1>
+
+            <p>There are a few ways to get started with Outline Mail.</p>
+
+            <p>
+              Download the
+              <a href="https://github.com/matt-harris/outline-mail/archive/master.zip"
+                >latest release</a
+              >
+              from GitHub.
+            </p>
+
+            <p>Install with Bower</p>
+
+            <pre><code>bower install outline-mail</code></pre>
+
+            <p>
+              To clone the <a href="https://github.com/matt-harris/outline-mail">git repository</a>.
+              Just run the following command.
+            </p>
+
+            <pre><code>[sudo] git clone git@github.com:matt-harris/outline-mail.git</code></pre>
+          </section>
+
+          <section class="docs__item" id="overview">
+            <h2 class="docs__heading">Overview</h2>
+
+            <p>
+              Outline Mail is HTML email framework with a bunch of fully tested responsive
+              components to provide you a solid foundation for your HTML email project.
+            </p>
+
+            <p>
+              It allows you to mix and match content blocks to easily build an HTML email using
+              todays best practices in minutes.
+            </p>
+
+            <p>
+              You can let Gulp do its magic if you are in to that, or simply copy &amp; paste the
+              component code into the master layout file.
+            </p>
+
+            <p>
+              Outline Mail comes with a fully commented <code>gulpfile.js</code> and
+              <code>package.json</code> file which lists the plugins used. For more information
+              about getting sarted with gulp read this excellent
+              <a href="http://markgoodyear.com/2014/01/getting-started-with-gulp/"
+                >intro by Mark Goodyear</a
+              >.
+            </p>
+
+            <p>
+              Outline Mail's components are tested in <a href="https://litmus.com/">Litmus</a> in
+              over 30+ email clients.
+            </p>
+
+            <p>
+              Outline Mail's library of email components will keep on growing! If you have any
+              requests please
+              <a href="https://twitter.com/matty_h" target="_blank">get in touch.</a>
+            </p>
+          </section>
+
+          <section class="docs__item" id="layouts">
+            <h2 class="docs__heading">Layouts</h2>
+
+            <h4>Start creating your HTML email</h4>
+
+            <p>
+              I've included <code>layouts/index.tpl.html</code> (if you are using Gulp) or
+              <code>dist/index.html</code> (if you are copying and pasting the component code), as a
+              starting point. This has all base markup and styles needed to build your responsive
+              email. You then just simply change / add text and images.
+            </p>
+
+            <p>You have two options to build your HTML email:-</p>
+
+            <ol>
+              <li>
+                <p>
+                  Use Gulp and automate the build of your email (use
+                  <code>layouts/index.tpl.html</code>):-
+                </p>
+
+                <p>Gulp tasks included:-</p>
+
+                <ul class="space-btm">
+                  <li>
+                    Include partial files into email template (compiles to <code>dist/</code>)
+                  </li>
+                  <li>Compress images (compiles to <code>dist/</code>)</li>
+                  <li>Reload browser (Browser Sync)</li>
+                  <li>
+                    Send test emails (Requires <a href="https://www.mailgun.com/">Mailgun</a> API
+                    key)
+                  </li>
+                </ul>
+
+                <p>
+                  Just simply stack your email components in order to create your responsive email.
+                </p>
+
+                <p>
+                  For example to include a header - pick the style of your choice and then paste
+                  into the <code>index.tpl.html</code>
+                </p>
+
+                <pre><code>@@include('header/_header-full.html')</code></pre>
+              </li>
+              <li>
+                <p>
+                  Copy and paste the component html straight into your
+                  <code>dist/index.html</code> file. Just hit the 'View code' button to view the
+                  source code for that component.
+                </p>
+              </li>
+            </ol>
+
+            <h4>Examples</h4>
+
+            <p>Five example emails are included for reference.</p>
+
+            <p>The build files are located in <code>templates/layouts/</code>.</p>
+
+            <p>The final compiled files are located in <code>dist/</code>.</p>
+
+            <h4>Example 1</h4>
+
+            <img class="docs__image" src="img/min/example-email1.jpg" alt="Example Email" />
+
+            <a
+              class="btn btn--component"
+              href="/demo/emails/example-email1.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://github.com/matt-harris/outline-mail/blob/master/templates/layouts/example-email1.tpl.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Example 2</h4>
+
+            <img class="docs__image" src="img/min/example-email2.jpg" alt="Example Email" />
+
+            <a
+              class="btn btn--component"
+              href="/demo/emails/example-email2.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://github.com/matt-harris/outline-mail/blob/master/templates/layouts/example-email2.tpl.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Example 3</h4>
+
+            <img class="docs__image" src="img/min/example-email3.jpg" alt="Example Email" />
+
+            <a
+              class="btn btn--component"
+              href="/demo/emails/example-email3.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://github.com/matt-harris/outline-mail/blob/master/templates/layouts/example-email3.tpl.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Example 4</h4>
+
+            <img class="docs__image" src="img/min/example-email4.jpg" alt="Example Email" />
+
+            <a
+              class="btn btn--component"
+              href="/demo/emails/example-email4.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://github.com/matt-harris/outline-mail/blob/master/templates/layouts/example-email4.tpl.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Example eCommerce</h4>
+
+            <img class="docs__image" src="img/min/example-ecommerce.jpg" alt="Example ecommerce" />
+
+            <a
+              class="btn btn--component"
+              href="/demo/emails/example-ecommerce.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://github.com/matt-harris/outline-mail/blob/master/templates/layouts/example-ecommerce.tpl.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <div id="components"></div>
+
+          <section class="docs__item" id="header">
+            <h2 class="docs__heading">Header</h2>
+
+            <h4>Header <code>components/header/_header.html</code></h4>
+
+            <p>A basic header with a logo aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/header.jpg" alt="Header" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('header/_header.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/header/header.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/header/_header.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Header centre <code>components/header/_header-centre.html</code></h4>
+
+            <p>A header with a logo aligned to the centre.</p>
+
+            <img class="docs__image" src="img/min/header-centre.jpg" alt="Header centre" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('header/_header-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/header/header-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/header/_header-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Header full <code>components/header/_header-full.html</code></h4>
+
+            <p>A header with a full width background colour and logo aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/header-full.jpg" alt="Header full" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('header/_header-full.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/header/header-full.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/header/_header-full.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Header full centre <code>components/header/_header-full-centre.html</code></h4>
+
+            <p>A header with a full width background colour and logo aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/header-full-centre.jpg"
+              alt="Header full centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('header/_header-full-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/header/header-full-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/header/_header-full-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Header text <code>components/header/_header-text.html</code></h4>
+
+            <p>A text header aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/header-text.jpg" alt="Header text" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('header/_header-text.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/header/header-text.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/header/_header-text.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Header text centre <code>components/header/_header-text-centre.html</code></h4>
+
+            <p>A text header aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/header-text-centre.jpg"
+              alt="Header text centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('header/_header-text-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/header/header-text-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/header/_header-text-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="hero">
+            <h2 class="docs__heading">Hero</h2>
+
+            <h4>
+              Hero - title, text and CTA <code>components/hero/_hero-title-text-cta.html</code>
+            </h4>
+
+            <p>A hero block with a title, text and CTA button aligned to the left.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/hero-title-text-cta.jpg"
+              alt="Hero - title, text and CTA"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('hero/_hero-title-text-cta.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/hero/hero-title-text-cta.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/hero/_hero-title-text-cta.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Hero - title, text and CTA centre
+              <code>components/hero/_hero-title-text-cta-centre.html</code>
+            </h4>
+
+            <p>A hero block with a title, text and CTA button aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/hero-title-text-cta-centre.jpg"
+              alt="Hero - title, text and CTA centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('hero/_hero-title-text-cta-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/hero/hero-title-text-cta-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/hero/_hero-title-text-cta-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Hero - image, title, text and CTA
+              <code>components/hero/_hero-img-title-text-cta.html</code>
+            </h4>
+
+            <p>A hero block with an image, title, text and CTA button aligned to the left.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/hero-img-title-text-cta.jpg"
+              alt="Hero - image, title, text and CTA"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('hero/_hero-img-title-text-cta.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/hero/hero-img-title-text-cta.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/hero/_hero-img-title-text-cta.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Hero - image, title, text and CTA centre
+              <code>components/hero/_hero-img-title-text-cta-centre.html</code>
+            </h4>
+
+            <p>A hero block with an image, title, text and CTA button aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/hero-img-title-text-cta-centre.jpg"
+              alt="Hero - image, title, text and CTA centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('hero/_hero-img-title-text-cta-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/hero/hero-img-title-text-cta-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/hero/_hero-img-title-text-cta-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="list">
+            <h2 class="docs__heading">List</h2>
+
+            <h4>
+              List - image, title and author
+              <code>components/list/_list-img-title-author.html</code>
+            </h4>
+
+            <p>A list style layout with section title, image, title and author.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/list-img-title-author.jpg"
+              alt="List - image, title and author"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('list/_list-img-title-author.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/list/list-img-title-author.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/list/_list-img-title-author.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>List - title and author <code>components/list/_list-title-author.html</code></h4>
+
+            <p>A list style layout with section title, title and author.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/list-title-author.jpg"
+              alt="List - title and author"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('list/_list-title-author.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/list/list-title-author.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/list/_list-title-author.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="misc">
+            <h2 class="docs__heading">Misc</h2>
+
+            <h4>Misc - Divider <code>components/misc/_divider.html</code></h4>
+
+            <p>A full width dividing line.</p>
+
+            <img class="docs__image" src="img/min/divider.jpg" alt="Misc - Divider" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('misc/_divider.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/misc/divider.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/misc/_divider.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Misc - Section title centre <code>components/misc/_section-title-centre.html</code>
+            </h4>
+
+            <p>
+              A section title aligned to the centre. Place this above a content component block (e.g
+              Two up centre).
+            </p>
+
+            <img
+              class="docs__image"
+              src="img/min/section-title-centre.jpg"
+              alt="Misc - Section title centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('misc/_section-title-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/misc/section-title-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/misc/_section-title-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Misc - View in browser <code>components/misc/_view-in-browser.html</code></h4>
+
+            <p>A basic full width block with text aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/view-in-browser.jpg"
+              alt="Misc - View in browser"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('misc/_view-in-browser.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/misc/view-in-browser.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/misc/_view-in-browser.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="one-up">
+            <h2 class="docs__heading">One up</h2>
+
+            <h4>One up - text <code>components/one-up/_one-up.html</code></h4>
+
+            <p>A basic one column block.</p>
+
+            <img class="docs__image" src="img/min/one-up.jpg" alt="One up" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('one-up/_one-up.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/one-up/one-up.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/one-up/_one-up.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="two-up">
+            <h2 class="docs__heading">Two up</h2>
+
+            <h4>Two up - text <code>components/two-up/_two-up-text.html</code></h4>
+
+            <p>A two column text block aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/two-up-text.jpg" alt="Two up - text" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('two-up/_two-up-text.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/two-up/two-up-text.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/two-up/_two-up-text.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Two up - title, text <code>components/two-up/_two-up-title-text.html</code></h4>
+
+            <p>A two column text block with title aligned to the left.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/two-up-title-text.jpg"
+              alt="Two up - title, text"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('two-up/_two-up-title-text.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/two-up/two-up-title-text.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/two-up/_two-up-title-text.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Two up <code>components/two-up/_two-up.html</code></h4>
+
+            <p>A two column block with image, title and text aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/two-up.jpg" alt="Two up" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('two-up/_two-up.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/two-up/two-up.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/two-up/_two-up.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Two up - centre <code>components/two-up/_two-up-centre.html</code></h4>
+
+            <p>A two column block with image, title and text aligned to the centre.</p>
+
+            <img class="docs__image" src="img/min/two-up-centre.jpg" alt="Two up - centre" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('two-up/_two-up-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/two-up/two-up-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/two-up/_two-up-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Two up - button <code>components/two-up/_two-up-button.html</code></h4>
+
+            <p>A two column block with image, title, text and CTA button aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/two-up-button.jpg" alt="Two up - button" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('two-up/_two-up-button.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/two-up/two-up-button.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/two-up/_two-up-button.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Two up - button centre <code>components/two-up/_two-up-button-centre.html</code>
+            </h4>
+
+            <p>A two column block with image, title, text and CTA button aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/two-up-button-centre.jpg"
+              alt="Two up - button centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('two-up/_two-up-button-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/two-up/two-up-button-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/two-up/_two-up-button-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="three-up">
+            <h2 class="docs__heading">Three up</h2>
+
+            <h4>Three up - text <code>components/three-up/_three-up-text.html</code></h4>
+
+            <p>A three column text block aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/three-up-text.jpg" alt="Three up - text" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('three-up/_three-up-text.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/three-up/three-up-text.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/three-up/_three-up-text.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Three up - title, text <code>components/three-up/_three-up-title-text.html</code>
+            </h4>
+
+            <p>A three column text block with title aligned to the left.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/three-up-title-text.jpg"
+              alt="Three up - title, text"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('three-up/_three-up-title-text.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/three-up/three-up-title-text.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/three-up/_three-up-title-text.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Three up <code>components/three-up/_three-up.html</code></h4>
+
+            <p>A three column block with image, title and text aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/three-up.jpg" alt="Three up" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('three-up/_three-up.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/three-up/three-up.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/three-up/_three-up.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Three up - centre <code>components/three-up/_three-up-centre.html</code></h4>
+
+            <p>A three column block with image, title and text aligned to the centre.</p>
+
+            <img class="docs__image" src="img/min/three-up-centre.jpg" alt="Three up - centre" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('three-up/_three-up-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/three-up/three-up-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/three-up/_three-up-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Three up - button <code>components/three-up/_three-up-button.html</code></h4>
+
+            <p>A three column block with image, title, text and CTA button aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/three-up-button.jpg" alt="Three up - button" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('three-up/_three-up-button.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/three-up/three-up-button.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/three-up/_three-up-button.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Three up - button centre <code>components/three-up/_three-up-button-centre.html</code>
+            </h4>
+
+            <p>
+              A three column block with image, title, text and CTA button aligned to the centre.
+            </p>
+
+            <img
+              class="docs__image"
+              src="img/min/three-up-button-centre.jpg"
+              alt="Three up - button centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('three-up/_three-up-button-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/three-up/three-up-button-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/three-up/_three-up-button-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="four-up">
+            <h2 class="docs__heading">Four up</h2>
+
+            <h4>Four up <code>components/four-up/_four-up.html</code></h4>
+
+            <p>
+              A two column block with four items including image, title and text aligned to the
+              left.
+            </p>
+
+            <img class="docs__image" src="img/min/four-up.jpg" alt="Four up" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('four-up/_four-up.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/four-up/four-up.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/four-up/_four-up.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Four up - centre <code>components/four-up/_four-up-centre.html</code></h4>
+
+            <p>
+              A two column block with four items including image, title and text aligned to the
+              centre.
+            </p>
+
+            <img class="docs__image" src="img/min/four-up-centre.jpg" alt="Four up - centre" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('four-up/_four-up-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/four-up/four-up-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/four-up/_four-up-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Four up - button <code>components/four-up/_four-up-button.html</code></h4>
+
+            <p>
+              A two column block with four items including image, title, text and CTA button aligned
+              to the left.
+            </p>
+
+            <img class="docs__image" src="img/min/four-up-button.jpg" alt="Four up - button" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('four-up/_four-up-button.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/four-up/four-up-button.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/four-up/_four-up-button.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Four up - button centre <code>components/four-up/_four-up-button-centre.html</code>
+            </h4>
+
+            <p>
+              A two column block with four items including image, title, text and CTA button aligned
+              to the centre.
+            </p>
+
+            <img
+              class="docs__image"
+              src="img/min/four-up-button-centre.jpg"
+              alt="Four up - button centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('four-up/_four-up-button-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/four-up/four-up-button-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/four-up/_four-up-button-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="gallery">
+            <h2 class="docs__heading">Gallery</h2>
+
+            <h4>
+              Gallery - four up centre <code>components/gallery/_gallery-four-centre.html</code>
+            </h4>
+
+            <p>A two column gallery layout block including image, title and CTA button.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/gallery-four-centre.jpg"
+              alt="Gallery - four up centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('gallery/_gallery-four-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/gallery/gallery-four-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/gallery/_gallery-four-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="article">
+            <h2 class="docs__heading">Article</h2>
+
+            <h4>Article <code>components/article/_article.html</code></h4>
+
+            <p>A two column article layout block including image, title, text and CTA button.</p>
+
+            <img class="docs__image" src="img/min/article.jpg" alt="Article" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('article/_article.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/article/article.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/article/_article.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Article - multiple with title <code>components/article/_articles-title.html</code>
+            </h4>
+
+            <p>
+              Multiple articles with a section heading including image, title, text and CTA button.
+            </p>
+
+            <img
+              class="docs__image"
+              src="img/min/articles-title.jpg"
+              alt="Article - multiple with title"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('article/_articles-title.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/article/articles-title.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/article/_articles-title.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="ecommerce">
+            <h2 class="docs__heading">eCommerce</h2>
+
+            <h4>eCommerce Intro <code>components/ecommerce/_ecommerce-intro.html</code></h4>
+
+            <p>A general eCommerce text introduction with CTA button.</p>
+
+            <img class="docs__image" src="img/min/ecommerce-intro.jpg" alt="eCommerce Intro" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('ecommerce/_ecommerce-intro.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/ecommerce/ecommerce-intro.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/ecommerce/_ecommerce-intro.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              eCommerce Order details
+              <code>components/ecommerce/_ecommerce-order-details.html</code>
+            </h4>
+
+            <p>A general eCommerce product item with product image and description.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/ecommerce-order-details.jpg"
+              alt="eCommerce Order details"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('ecommerce/_ecommerce-order-details.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/ecommerce/ecommerce-order-details.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/ecommerce/_ecommerce-order-details.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              eCommerce Order total <code>components/ecommerce/_ecommerce-order-total.html</code>
+            </h4>
+
+            <p>A general eCommerce order total.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/ecommerce-order-total.jpg"
+              alt="eCommerce Order total"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('ecommerce/_ecommerce-order-total.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/ecommerce/ecommerce-order-total.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/ecommerce/_ecommerce-order-total.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              eCommerce Order delivery
+              <code>components/ecommerce/_ecommerce-order-delivery.html</code>
+            </h4>
+
+            <p>An eCommerce two column order delivery section.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/ecommerce-order-total.jpg"
+              alt="eCommerce Order delivery"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('ecommerce/_ecommerce-order-delivery.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/ecommerce/ecommerce-order-delivery.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/ecommerce/_ecommerce-order-delivery.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <section class="docs__item" id="footer">
+            <h2 class="docs__heading">Footer</h2>
+
+            <h4>Footer <code>components/footer/_footer.html</code></h4>
+
+            <p>A text footer with text aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/footer.jpg" alt="Footer" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('footer/_footer.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/footer/footer.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/footer/_footer.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Footer - centre <code>components/footer/_footer-centre.html</code></h4>
+
+            <p>A text footer with text aligned to the centre.</p>
+
+            <img class="docs__image" src="img/min/footer-centre.jpg" alt="Footer - centre" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('footer/_footer-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/footer/footer-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/footer/_footer-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Footer full <code>components/footer/_footer-full.html</code></h4>
+
+            <p>A text footer with a full width background colour aligned to the left.</p>
+
+            <img class="docs__image" src="img/min/footer-full.jpg" alt="Footer full" />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('footer/_footer-full.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/footer/footer-full.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/footer/_footer-full.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Footer full - centre <code>components/footer/_footer-full-centre.html</code></h4>
+
+            <p>A text footer with a full width background colour aligned to the centre.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/footer-full-centre.jpg"
+              alt="Footer full - centre"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('footer/_footer-full-centre.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/footer/footer-full-centre.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/footer/_footer-full-centre.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>
+              Footer full - logo and links
+              <code>components/footer/_footer-full-logo-links.html</code>
+            </h4>
+
+            <p>
+              A footer with a full width background colour. A logo aligned to the left and text
+              aligned to the right.
+            </p>
+
+            <img
+              class="docs__image"
+              src="img/min/footer-full-logo-links.jpg"
+              alt="Footer full - logo and links"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('footer/_footer-full-logo-links.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/footer/footer-full-logo-links.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/footer/_footer-full-logo-links.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+
+            <hr class="hr-alt" />
+
+            <h4>Footer - logo and links <code>components/footer/_footer-logo-links.html</code></h4>
+
+            <p>A footer with a logo aligned to the left and text aligned to the right.</p>
+
+            <img
+              class="docs__image"
+              src="img/min/footer-logo-links.jpg"
+              alt="Footer - logo and links"
+            />
+
+            <p>Copy and paste this into the main layout file.</p>
+
+            <pre><code>@@include('footer/_footer-logo-links.html')</code></pre>
+
+            <a
+              class="btn btn--component"
+              href="/demo/footer/footer-logo-links.html"
+              target="_blank"
+              role="button"
+              >View demo</a
+            >
+
+            <a
+              class="btn btn--code"
+              href="https://raw.githubusercontent.com/matt-harris/outline-mail/master/templates/components/footer/_footer-logo-links.html"
+              target="_blank"
+              role="button"
+              >View code</a
+            >
+          </section>
+
+          <hr class="hr-alt" />
+
+          <footer class="footer docs__item clearfix">
+            <div class="container">
+              Outline Mail is a project by <a href="http://www.matt-harris.net">Matt Harris</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i.GoogleAnalyticsObject = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-49516749-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="js/min/bundle.js"></script>
+    <script>
+      smoothScroll.init({
+        speed: 800,
+        easing: 'easeOutQuad',
+        updateURL: false,
+      });
+    </script>
+  </body>
+</html>

@@ -1,10 +1,13 @@
 # Outline Mail
+
 Outline Mail is a HTML email boilerplate, created by [Matt Harris](https://twitter.com/matty_h)
 
 ## Full Documentation
-View full documentation at: http://outlinemail.co.uk/get-started.html
+
+View full documentation at: http://outline-mail.surge.sh/get-started.html
 
 ## Dependencies
+
 Node.js
 
 ## Quick Start
@@ -25,7 +28,7 @@ Node.js
 ## Features - Included Gulp Tasks
 
 - Image minification
-  - Any images put in ```templates/img/``` with .gif, .jpg and .png extensions will be optimized and placed in ```dist/img/```.
+  - Any images put in `templates/img/` with .gif, .jpg and .png extensions will be optimized and placed in `dist/img/`.
 - Browser Sync
   - Allows your browser to live reload when making changes.
 - Gulp Mailgun

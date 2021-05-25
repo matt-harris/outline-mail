@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Outline Mail - making html email easy</title>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+      #outlook a {
+        padding: 0;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div,
+      .ExternalClass * {
+        line-height: 100%;
+      }
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* RESET STYLES */
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      /* Remove margin on email wrapper in Android 4.4 KitKat */
+      /* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+      div[style*='margin: 16px 0'] {
+        margin: 0 !important;
+        font-size: 100% !important;
+      }
+
+      /* Remove ios blue links */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* Outline styles */
+      @media only screen and (max-width: 599px) {
+        .content-table {
+          width: 100% !important;
+        }
+
+        img[class='img-max'] {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        table[class='mobile-button-wrap'] {
+          margin: 0 auto;
+          width: 100% !important;
+        }
+
+        a[class='mobile-button'] {
+          width: 80% !important;
+          padding: 8px !important;
+          border: 0 !important;
+        }
+
+        .mobile-align-center {
+          text-align: center !important;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0 !important; padding: 0 !important">
+    <!-- hidden preheader text - Remember to change it! -->
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        color: #fefefe;
+        line-height: 1px;
+        font-family: Helvetica, Arial, sans-serif;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+      "
+    >
+      Outline mail - making html email easy.
+    </div>
+
+    <!-- footer full logo links -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td style="padding: 32px 0 0 0" align="center">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td bgcolor="#dce8ef" align="center">
+                <table
+                  class="content-table"
+                  align="center"
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="600"
+                >
+                  <tr>
+                    <td style="padding: 16px 16px 0 16px" align="center" valign="top">
+                      <!-- Two column -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td>
+                            <!-- logo left -->
+                            <table
+                              class="content-table"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              align="left"
+                            >
+                              <tr>
+                                <td style="padding-bottom: 16px">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td align="left">
+                                        <a href="http://outline-mail.surge.sh">
+                                          <img
+                                            class="mobile-align-center"
+                                            style="display: block"
+                                            src="http://outline-mail.surge.sh/img/logo.png"
+                                            width="200"
+                                            height="20"
+                                            border="0"
+                                            alt="Outline Mail"
+                                          />
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- /logo left -->
+                            <!-- content right -->
+                            <table
+                              class="content-table"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              align="right"
+                            >
+                              <tr>
+                                <td style="padding-bottom: 16px">
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td
+                                        class="mobile-align-center"
+                                        style="
+                                          color: #333333;
+                                          font-family: Helvetica, Arial, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: normal;
+                                          line-height: 21px;
+                                        "
+                                        align="right"
+                                      >
+                                        Outline Mail is a project by
+                                        <a
+                                          style="color: #38a1d6; text-decoration: none"
+                                          href="http://www.matt-harris.net"
+                                          >Matt Harris</a
+                                        >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        class="mobile-align-center"
+                                        style="
+                                          color: #333333;
+                                          font-family: Helvetica, Arial, sans-serif;
+                                          font-size: 14px;
+                                          font-weight: normal;
+                                          line-height: 21px;
+                                        "
+                                        align="right"
+                                      >
+                                        <a style="color: #38a1d6; text-decoration: none" href="#"
+                                          >View in your browser</a
+                                        >
+                                        |
+                                        <a style="color: #38a1d6; text-decoration: none" href="#"
+                                          >Unsubscribe</a
+                                        >
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- /content right -->
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- /Two column -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- /footer full logo links -->
+  </body>
+</html>

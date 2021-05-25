@@ -1,11 +1,9 @@
 {
   "name": "outline mail",
   "version": "0.3",
-  "homepage": "http://outlinemail.co.uk/",
+  "homepage": "http://outline-mail.surge.sh/",
   "description": "Outline Mail is HTML email framework with a bunch of fully tested responsive components to provide you a solid foundation for your HTML email project. It allows you to mix and match content blocks to easily build an HTML email using todays best practices in minutes.",
-  "authors": [
-    "Matt Harris <hello@matt-harris.net> (http://www.matt-harris.net/)"
-  ],
+  "authors": ["Matt Harris <hello@matt-harris.net> (http://www.matt-harris.net/)"],
   "main": "templates/layouts/index.tpl.html",
   "keywords": [
     "outline mail",
@@ -21,11 +19,5 @@
     "simple"
   ],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"]
 }
