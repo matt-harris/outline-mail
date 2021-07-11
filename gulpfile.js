@@ -8,13 +8,13 @@ var images = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-var notify = require('gulp-notify');
-var sendmail = require('gulp-mailgun');
-var litmus = require('gulp-litmus');
+//var notify = require('gulp-notify');
+//var sendmail = require('gulp-mailgun');
+//var litmus = require('gulp-litmus');
 var runSequence = require('run-sequence');
 var del = require('del');
 
-var litmusConfig = {
+/*var litmusConfig = {
     username: 'litmus_username',
     password: 'litmus_password',
     url: 'https://yourcompany.litmus.com',
@@ -29,11 +29,11 @@ var litmusConfig = {
         'gmailnew', // Gmail (Explorer)
         'iphone6' // iPhone 6
     ]
-};
+};*/
 
 // Default Task
 gulp.task('default', function(cb) {
-  runSequence('clean', ['fileinclude', 'images', 'browser-sync', 'sendmail', 'litmus-test', 'watch'], cb);
+  runSequence('clean', ['fileinclude', 'images', 'browser-sync', 'watch'], cb);
 });
 
 // Tasks
@@ -105,7 +105,7 @@ gulp.task('browser-sync', function() {
 
 // Send test emails
 // https://www.npmjs.com/package/gulp-mailgun
-gulp.task('sendmail', function () {
+/*gulp.task('sendmail', function () {
   gulp.src( 'dist/*.html') // Modify this to select the HTML file(s)
   .pipe(sendmail({
     key: 'Enter your Mailgun API key here', // Enter your Mailgun API key here
@@ -126,7 +126,7 @@ gulp.task('litmus-test', function () {
   return gulp.src('dist/*.html') // Modify this to select the HTML file(s)
     .pipe(litmus(litmusConfig))
     .pipe(gulp.dest('dist'));
-});
+});*/
 
 // Watch files for changes
 gulp.task('watch', function() {
